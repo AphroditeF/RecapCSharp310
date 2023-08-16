@@ -44,5 +44,15 @@ namespace RecapCSharp310
         public void Details() {
             Console.WriteLine("The " + _color + " car " + _name + " has " + _hp + " hp.");
         }
+
+        public void setName(string name) {
+            if (name == "") {
+                _name = "Default name";
+            }
+            else
+            {
+                _name = name;
+            }
+        }
     }
 }
