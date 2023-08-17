@@ -12,6 +12,16 @@ namespace RecapCSharp310
         private int _hp;
         private string _color;
 
+        public string Name { get { return _name; } set { _name = value; } }
+
+
+       // public int MaxSpeed { get; } = 10;
+
+        private int _maxSpeed;
+        public int MaxSpeed { set { _maxSpeed = value; } }
+
+
+
         //Default Constructor
         public Car() {
             _name = "Car";
@@ -53,6 +63,11 @@ namespace RecapCSharp310
             {
                 _name = name;
             }
+        }
+
+        public string getName() {
+            return _name;
+
         }
     }
 }

@@ -9,6 +9,13 @@ namespace RecapCSharp310
             Console.WriteLine("Hello, World!");
             Car myCar = new Car();
             myCar.setName("YoCar");
+            myCar.Name = "yoyoyo";
+            myCar.MaxSpeed = 70;
+            Console.WriteLine(myCar.getName());
+            Console.WriteLine(myCar.Name);
+            // myCar.MaxSpeed(300);
+            myCar.MaxSpeed = 300;
+            //Console.WriteLine(myCar.MaxSpeed);
             myCar.Details();
             Car audi=new Car("Audi A4",250,"blue");
             audi.Drive();
